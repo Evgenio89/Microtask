@@ -78,7 +78,7 @@ function AppWithReducers() {
     function removeTodolist(todoId: string) {
         const action = removeTodolistAc(todoId)
         dispatchToTodolist(action)
-        delete tasks[todoId]
+        dispatchToTasks(action)
     }
     function  addTodolist(title: string) {
         const action = addTodolistAC(title)
